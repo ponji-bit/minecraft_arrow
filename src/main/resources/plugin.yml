@@ -1,0 +1,16 @@
+name: S2ETargetExtender
+main: com.example.s2eext.S2ETargetExtender
+version: 1.0.0
+api-version: '1.20'
+softdepend:
+  - s2e-tower-defense
+
+commands:
+  td:
+    description: Target control command
+    usage: /td target set <number>
+    permission: s2eext.admin
+
+permissions:
+  s2eext.admin:
+    default: op
